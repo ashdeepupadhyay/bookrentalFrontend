@@ -1,0 +1,14 @@
+<div class="row" *ngFor="let book of booksList;let i=index">
+  <div class="col-md-12">
+    <div class="list-group">
+      <a href="#" class="list-group-item " [routerLink]='["/selectedBooks",i]'>
+        <div class="d-flex justify-content-between">
+          <div class="d-flex flex-column">
+            <h5>ClientId - {{i+1}}</h5>
+            <p>CLick to see detail</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
